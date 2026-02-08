@@ -1,0 +1,127 @@
+/* ================= WRAPPER ================= */
+.navbar-wrapper {
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* ================= TOP STRIP ================= */
+.top-bar {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  background-color: #007bff;
+  padding: 34px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+.top-icon {
+  font-size: 34px;
+  color: white;
+}
+
+.brand-text {
+  color: white;
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* ================= BOTTOM STRIP ================= */
+.bottom-bar {
+  background: white;
+  padding: 26px 60px;
+  display: flex;
+  align-items: center;
+
+  /* 🔥 IMPORTANT FIX */
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+
+  /* HOME PAGE FIX */
+  position: relative;
+  z-index: 1500;
+}
+
+/* ================= CENTER ================= */
+.nav-center {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+/* ================= LINKS ================= */
+.nav-link {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-link svg {
+  font-size: 19px;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+/* ================= DROPDOWN ================= */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 155%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  min-width: 190px;
+  border-radius: 14px;
+  box-shadow: 0 18px 35px rgba(0,0,0,0.35);
+  overflow: hidden;
+  z-index: 3000;
+}
+
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  justify-content: center;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.dropdown-menu a:hover {
+  background: #f1f1f1;
+}
+
+/* ================= LOGOUT ================= */
+.logout-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.logout-btn:hover {
+  background: darkred;
+}

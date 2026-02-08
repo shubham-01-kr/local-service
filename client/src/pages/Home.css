@@ -1,0 +1,124 @@
+.home {
+  background: #f5f7fb;
+}
+
+/* ================= HERO ================= */
+.hero {
+  padding: 90px 20px 120px;
+  background: linear-gradient(135deg, #007bff, #0056d2);
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 52px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color:#007bff;
+}
+
+.hero p {
+  font-size: 20px;
+  opacity: 0.95;
+  margin-bottom: 40px;
+    color:#007bff;
+
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.search-box input {
+  width: 380px;
+  padding: 16px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+}
+
+.search-box button {
+  padding: 16px 30px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  background: white;
+  color: #007bff;
+}
+/* ================= SERVICES SECTION ================= */
+
+.services {
+  background: #fff;
+  margin-top: -70px;
+  padding: 90px 40px 110px;
+  border-radius: 32px 32px 0 0;
+  box-shadow: 0 -18px 40px rgba(0,0,0,0.18);
+  position: relative;
+  z-index: 10;
+}
+
+/* 🔥 HEADING FIX — NO FLEX ISSUE */
+.services-heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.services-heading h2 {
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* ================= CARD ROW ================= */
+
+.service-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.service-grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* ================= CARD ================= */
+
+.card {
+  min-width: 270px;
+  background: white;
+  padding: 38px 30px;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 16px 42px rgba(0,0,0,0.14);
+  transition: 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 26px 60px rgba(0,0,0,0.22);
+}
+
+.card h3 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.card span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #007bff;
+}
